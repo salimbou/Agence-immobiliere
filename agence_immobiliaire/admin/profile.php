@@ -14,7 +14,7 @@ if(!isset($_SESSION['auser']))
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title>LM HOMES | Profile</title>
+        <title>Profile</title>
 		
 		<!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
@@ -31,10 +31,7 @@ if(!isset($_SESSION['auser']))
 		<!-- Main CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
 		
-		<!--[if lt IE 9]>
-			<script src="assets/js/html5shiv.min.js"></script>
-			<script src="assets/js/respond.min.js"></script>
-		<![endif]-->
+		
     </head>
     <body>
 	
@@ -55,7 +52,7 @@ if(!isset($_SESSION['auser']))
 							<div class="col">
 								<h3 class="page-title">Profile</h3>
 								<ul class="breadcrumb">
-									<li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
+									<li class="breadcrumb-item"><a href="dashboard.php">Tableau De Bord</a></li>
 									<li class="breadcrumb-item active">Profile</li>
 								</ul>
 							</div>
@@ -95,9 +92,7 @@ if(!isset($_SESSION['auser']))
 									<li class="nav-item">
 										<a class="nav-link active" data-toggle="tab" href="#per_details_tab">About</a>
 									</li>
-								<!--	<li class="nav-item">
-										<a class="nav-link" data-toggle="tab" href="#password_tab">Password</a>
-									</li>  -->
+								
 								</ul>
 							</div>	
 							<div class="tab-content profile-tab-cont">
@@ -111,11 +106,11 @@ if(!isset($_SESSION['auser']))
 											<div class="card">
 												<div class="card-body">
 													<div class="row">
-														<p class="col-sm-3 text-muted text-sm-right mb-0 mb-sm-3">Name</p>
+														<p class="col-sm-3 text-muted text-sm-right mb-0 mb-sm-3">Nome</p>
 														<p class="col-sm-9"><?php echo $row['1']; ?></p>
 													</div>
 													<div class="row">
-														<p class="col-sm-3 text-muted text-sm-right mb-0 mb-sm-3">Date of Birth</p>
+														<p class="col-sm-3 text-muted text-sm-right mb-0 mb-sm-3">Date de naissance</p>
 														<p class="col-sm-9"><?php echo $row['4']; ?></p>
 													</div>
 													<div class="row">
@@ -123,7 +118,7 @@ if(!isset($_SESSION['auser']))
 														<p class="col-sm-9"><a href="#"><?php echo $row['2']; ?></a></p>
 													</div>
 													<div class="row">
-														<p class="col-sm-3 text-muted text-sm-right mb-0 mb-sm-3">Mobile</p>
+														<p class="col-sm-3 text-muted text-sm-right mb-0 mb-sm-3">Telephone</p>
 														<p class="col-sm-9"><?php echo $row['5']; ?></p>
 													</div>
 													
@@ -137,7 +132,7 @@ if(!isset($_SESSION['auser']))
 											<div class="card">
 												<div class="card-body">
 													<h5 class="card-title d-flex justify-content-between">
-														<span>Account Status</span>
+														<span>Statut du compte</span>
 														
 													</h5>
 													<button class="btn btn-success" type="button"><i class="fe fe-check-verified"></i> Active</button>

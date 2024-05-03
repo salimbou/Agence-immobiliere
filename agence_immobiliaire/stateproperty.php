@@ -77,7 +77,7 @@ include("config.php");
                                     <div class="overlay-black overflow-hidden position-relative"> <img src="admin/property/<?php echo $row['18'];?>" alt="pimage">
                                     
                                         <div class="sale bg-success text-white">For <?php echo $row['5'];?></div>
-                                        <div class="price text-primary text-capitalize">$<?php echo $row['13'];?> <span class="text-white"><?php echo $row['12'];?> Sqft</span></div>
+                                        <div class="price text-primary text-capitalize">$<?php echo $row['13'];?> <span class="text-white"><?php echo $row['12'];?> Surface</span></div>
                                         
                                     </div>
                                     <div class="featured-thumb-data shadow-one">
@@ -85,7 +85,7 @@ include("config.php");
                                             <h5 class="text-secondary hover-text-success mb-2 text-capitalize"><a href="propertydetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h5>
                                             <span class="location text-capitalize"><i class="fas fa-map-marker-alt text-success"></i> <?php echo $row['14'];?></span> </div>
                                         <div class="px-4 pb-4 d-inline-block w-100">
-                                            <div class="float-left text-capitalize"><i class="fas fa-user text-success mr-1"></i>By : <?php echo $row['uname'];?></div>
+                                            <div class="float-left text-capitalize"><i class="fas fa-user text-success mr-1"></i>Par : <?php echo $row['uname'];?></div>
                                             <div class="float-right"><i class="far fa-calendar-alt text-success mr-1"></i> <?php echo date('d-m-Y', strtotime($row['date']));?></div>
                                         </div>
                                     </div>
@@ -100,8 +100,8 @@ include("config.php");
 					
                     <div class="col-lg-4">
                         <div class="sidebar-widget">
-                            <h4 class="double-down-line-left text-secondary position-relative pb-4 my-4">Instalment Calculator</h4>
-						<form class="d-inline-block w-100" action="calc.php" method="post">
+                            <!-- <h4 class="double-down-line-left text-secondary position-relative pb-4 my-4">Instalment Calculator</h4> -->
+						<!-- <form class="d-inline-block w-100" action="calc.php" method="post">
                             <label class="sr-only">Property Amount</label>
                             <div class="input-group mb-2 mr-sm-2">
                                 <div class="input-group-prepend">
@@ -124,11 +124,11 @@ include("config.php");
                                 <input type="text" class="form-control" name="interest" placeholder="Interest Rate">
                             </div>
                             <button type="submit" value="submit" name="calc" class="btn btn-danger mt-4">Calculate Instalment</button>
-                        </form>
+                        </form> -->
                         </div>
                         
                         <div class="sidebar-widget mt-5">
-                            <h4 class="double-down-line-left text-secondary position-relative pb-4 mb-4">Recently Added Property</h4>
+                            <h4 class="double-down-line-left text-secondary position-relative pb-4 mb-4">Propriété récemment ajoutée</h4>
                             <ul class="property_list_widget">
 							
 								<?php 

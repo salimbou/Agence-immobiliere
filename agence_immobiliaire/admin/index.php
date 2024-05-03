@@ -35,7 +35,7 @@
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title>AI Admin - Login</title>
+        <title>Agence Immobilere Admin - Login</title>
 		
 		<!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
@@ -64,19 +64,19 @@
                 	<div class="loginbox">
                         <div class="login-right">
 							<div class="login-right-wrap">
-								<h1>Admin Login Panel</h1>
-								<p class="account-subtitle">Access to our dashboard</p>
+								<h1>Panneau de connexion administrateur</h1>
+								<p class="account-subtitle">Accès à votre tableau de bord</p>
 								<p style="color:red;"><?php echo $error; ?></p>
 								<!-- Form -->
 								<form method="post">
 									<div class="form-group">
-										<input class="form-control" name="user" type="text" placeholder="User Name">
+										<input class="form-control" name="user" type="text" placeholder="Entrer Votre Nome D'utilisateur">
 									</div>
 									<div class="form-group">
-										<input class="form-control" type="password" name="pass" placeholder="Password">
+										<input class="form-control" type="password" name="pass" placeholder="Entrer Votre Mot-Pass">
 									</div>
 									<div class="form-group">
-										<button class="btn btn-primary btn-block" name="login" type="submit">Login</button>
+										<button class="btn btn-primary btn-block" name="login" type="submit">Se connecter</button>
 									</div>
 								</form>
 								

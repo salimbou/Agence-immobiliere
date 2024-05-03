@@ -14,7 +14,7 @@ if(!isset($_SESSION['auser']))
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title>Ventura - Data Tables</title>
+        <title>Data Tables</title>
 		
 		<!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
@@ -37,10 +37,6 @@ if(!isset($_SESSION['auser']))
 		<!-- Main CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
 		
-		<!--[if lt IE 9]>
-			<script src="assets/js/html5shiv.min.js"></script>
-			<script src="assets/js/respond.min.js"></script>
-		<![endif]-->
     </head>
     <body>
 	
@@ -59,10 +55,10 @@ if(!isset($_SESSION['auser']))
 					<div class="page-header">
 						<div class="row">
 							<div class="col">
-								<h3 class="page-title">User</h3>
+								<h3 class="page-title">Utilisateur</h3>
 								<ul class="breadcrumb">
-									<li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
-									<li class="breadcrumb-item active">User</li>
+									<li class="breadcrumb-item"><a href="dashboard.php">Tableau De Bord</a></li>
+									<li class="breadcrumb-item active">Utilisateur</li>
 								</ul>
 							</div>
 						</div>
@@ -73,9 +69,9 @@ if(!isset($_SESSION['auser']))
 						<div class="col-sm-12">
 							<div class="card">
 								<div class="card-header">
-									<h4 class="card-title">Default Datatable</h4>
+									<h4 class="card-title">Table de données par défaut</h4>
 									<p class="card-text">
-										This is the most basic example of the datatables with zero configuration. Use the <code>.datatable</code> class to initialize datatables.
+                                    C'est l'exemple le plus basique des tables de données avec zéro configuration. Utilisez le <code>.Table de données</code> classe pour initialiser les tables de données.
 									</p>
 								</div>
 								<div class="card-body">
@@ -83,12 +79,12 @@ if(!isset($_SESSION['auser']))
 									<table id="basic-datatable" class="table dt-responsive nowrap">
                                             <thead>
                                                 <tr>
-                                                    <th>Name</th>
+                                                    <th>Nome</th>
                                                     <th>Position</th>
-                                                    <th>Office</th>
-                                                    <th>Age</th>
-                                                    <th>Start date</th>
-                                                    <th>Salary</th>
+                                                    <th>Bureau</th>
+                                                    <th>Âge</th>
+                                                    <th>Date de début</th>
+                                                    <th>Salaire</th>
                                                 </tr>
                                             </thead>
                                         

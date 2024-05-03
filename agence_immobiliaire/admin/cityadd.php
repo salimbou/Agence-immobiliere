@@ -38,7 +38,7 @@ if(isset($_POST['insert']))
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title>Ventura - Data Tables</title>
+        <title>Data Tables</title>
 		
 		<!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
@@ -83,10 +83,10 @@ if(isset($_POST['insert']))
 					<div class="page-header">
 						<div class="row">
 							<div class="col">
-								<h3 class="page-title">State</h3>
+								<h3 class="page-title">Wilaya</h3>
 								<ul class="breadcrumb">
-									<li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
-									<li class="breadcrumb-item active">State</li>
+									<li class="breadcrumb-item"><a href="dashboard.php">Tableau De Bord</a></li>
+									<li class="breadcrumb-item active">Wilaya</li>
 								</ul>
 							</div>
 						</div>
@@ -98,7 +98,7 @@ if(isset($_POST['insert']))
 						<div class="col-md-12">
 							<div class="card">
 								<div class="card-header">
-									<h1 class="card-title">Add City</h1>
+									<h1 class="card-title">Add Wilaya</h1>
 									<?php echo $error;?>
 									<?php echo $msg;?>
 									<?php 
@@ -110,9 +110,9 @@ if(isset($_POST['insert']))
 									<div class="card-body">
 											<div class="row">
 												<div class="col-xl-6">
-													<h5 class="card-title">City Details</h5>
+													<h5 class="card-title">Details Wilaya</h5>
 													<div class="form-group row">
-														<label class="col-lg-3 col-form-label">State Name</label>
+														<label class="col-lg-3 col-form-label">Nome Wilaya</label>
 														<div class="col-lg-9" >	
 															<select class="form-control" name="state">
 																<option value="">Select</option>
@@ -127,7 +127,7 @@ if(isset($_POST['insert']))
 														</div>
 													</div>
 													<div class="form-group row">
-														<label class="col-lg-3 col-form-label">City Name</label>
+														<label class="col-lg-3 col-form-label">Nome Commune</label>
 														<div class="col-lg-9">
 															<input type="text" class="form-control" name="city">
 														</div>
@@ -149,7 +149,7 @@ if(isset($_POST['insert']))
 						<div class="col-sm-12">
 							<div class="card">
 								<div class="card-header">
-									<h4 class="card-title">City List</h4>
+									<h4 class="card-title">List Des Communes</h4>
 									
 								</div>
 								<div class="card-body">
@@ -158,9 +158,8 @@ if(isset($_POST['insert']))
                                             <thead>
                                                 <tr>
                                                     <th>#</th>
-                                                    <th>City</th>
-													<!-- <th>State ID</th> -->
-													<th>State</th>
+                                                    <th>Commune</th>
+													<th>Wilaya</th>
 													<th>Actions</th>
                                                 </tr>
                                             </thead>

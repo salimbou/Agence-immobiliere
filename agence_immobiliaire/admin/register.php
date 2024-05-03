@@ -38,7 +38,7 @@ if(isset($_REQUEST['insert']))
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title>Ventura - Register</title>
+        <title> Registrer</title>
 		
 		<!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
@@ -68,13 +68,13 @@ if(isset($_REQUEST['insert']))
                         <div class="login-right">
 							<div class="login-right-wrap">
 								<h1>Register</h1>
-								<p class="account-subtitle">Access to our dashboard</p>
+								<p class="account-subtitle">Accès à votre tableau de bord</p>
 								<p style="color:red;"><?php echo $error; ?></p>
 								<p style="color:green;"><?php echo $msg; ?></p>
 								<!-- Form -->
 								<form method="post">
 									<div class="form-group">
-										<input class="form-control" type="text" placeholder="Name" name="name">
+										<input class="form-control" type="text" placeholder="Nome" name="name">
 									</div>
 									<div class="form-group">
 										<input class="form-control" type="email" placeholder="Email" name="email">
@@ -83,25 +83,25 @@ if(isset($_REQUEST['insert']))
 										<input class="form-control" type="text" placeholder="Password" name="pass">
 									</div>
 									<div class="form-group">
-										<input class="form-control" type="date" placeholder="Date of Birth" name="dob">
+										<input class="form-control" type="date" placeholder="Date De Naissance" name="dob">
 									</div>
 									<div class="form-group">
-										<input class="form-control" type="text" placeholder="Phone" name="phone" maxlength="10">
+										<input class="form-control" type="text" placeholder="Telephone" name="phone" maxlength="10">
 									</div>
 									<div class="form-group mb-0">
-										<input class="btn btn-primary btn-block" type="submit" name="insert" Value="Register">
+										<input class="btn btn-primary btn-block rounded" type="submit" name="insert" Value="Registrer">
 									</div>
 								</form>
 								<!-- /Form -->
 								
 								<div class="login-or">
 									<span class="or-line"></span>
-									<span class="span-or">or</span>
+									<span class="span-or">Ou</span>
 								</div>
 								
 								<!-- Social Login -->
 								<div class="social-login">
-									<span>Register with</span>
+									<span>Registrer Avec</span>
 									<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
 									<a href="#" class="google"><i class="fa fa-google"></i></a>
 									<a href="#" class="facebook"><i class="fa fa-twitter"></i></a>
@@ -109,7 +109,7 @@ if(isset($_REQUEST['insert']))
 								</div>
 								<!-- /Social Login -->
 								
-								<div class="text-center dont-have">Already have an account? <a href="index.php">Login</a></div>
+								<div class="text-center dont-have">Vous avez déjà un compte? <a href="index.php">Se Connecter</a></div>
 							</div>
                         </div>
                     </div>

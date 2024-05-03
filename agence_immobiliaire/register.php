@@ -100,57 +100,57 @@ if(isset($_REQUEST['reg']))
                 	<div class="loginbox">
                         <div class="login-right">
 							<div class="login-right-wrap">
-								<h1>Register</h1>
-								<p class="account-subtitle">Access to our dashboard</p>
+								<h1>Registrer</h1>
+								<p class="account-subtitle">Accès à votre tableau de bord</p>
 								<?php echo $error; ?><?php echo $msg; ?>
 								<!-- Form -->
 								<form method="post" enctype="multipart/form-data">
 									<div class="form-group">
-										<input type="text"  name="name" class="form-control" placeholder="Your Name*">
+										<input type="text"  name="name" class="form-control" placeholder="Entrer Votre Nome*">
 									</div>
 									<div class="form-group">
-										<input type="email"  name="email" class="form-control" placeholder="Your Email*">
+										<input type="email"  name="email" class="form-control" placeholder="Entrer Votre Email*">
 									</div>
 									<div class="form-group">
-										<input type="text"  name="phone" class="form-control" placeholder="Your Phone*" maxlength="10">
+										<input type="text"  name="phone" class="form-control" placeholder="Entrer Votre Numero De Telephone*" maxlength="10">
 									</div>
 									<div class="form-group">
-										<input type="password" name="pass"  class="form-control" placeholder="Your Password*">
+										<input type="password" name="pass"  class="form-control" placeholder="Entrer Votre Mot-Pass*">
 									</div>
 
 									 <div class="form-check-inline">
 									  <label class="form-check-label">
-										<input type="radio" class="form-check-input" name="utype" value="user" checked>User
+										<input type="radio" class="form-check-input" name="utype" value="user" checked>Utilisateur
 									  </label>
 									</div>
 									<div class="form-check-inline">
 									  <label class="form-check-label">
-										<input type="radio" class="form-check-input" name="utype" value="agent">Agent
+										<input type="radio" class="form-check-input" name="utype" value="agent">Investisseur
 									  </label>
 									</div>
-									<div class="form-check-inline disabled">
+									<!-- <div class="form-check-inline disabled">
 									  <label class="form-check-label">
 										<input type="radio" class="form-check-input" name="utype" value="builder">Builder
 									  </label>
-									</div> 
+									</div>  -->
 									
 									<div class="form-group">
-										<label class="col-form-label"><b>User Image</b></label>
+										<label class="col-form-label"><b>Photo</b></label>
 										<input class="form-control" name="uimage" type="file">
 									</div>
 									
-									<button class="btn btn-success" name="reg" value="Register" type="submit">Register</button>
+									<button class="btn btn-success rounded" name="reg" value="Register" type="submit">Registrer</button>
 									
 								</form>
 								
 								<div class="login-or">
 									<span class="or-line"></span>
-									<span class="span-or">or</span>
+									<span class="span-or">ou</span>
 								</div>
 								
 								
 								
-								<div class="text-center dont-have">Already have an account? <a href="login.php">Login</a></div>
+								<div class="text-center dont-have">Vous avez déjà un compte? <a href="login.php">Se connecter</a></div>
 								
 							</div>
                         </div>

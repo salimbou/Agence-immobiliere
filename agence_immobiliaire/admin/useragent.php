@@ -14,7 +14,7 @@ if(!isset($_SESSION['auser']))
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title>LM Homes | Admin</title>
+        <title>Agent</title>
 		
 		<!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
@@ -61,7 +61,7 @@ if(!isset($_SESSION['auser']))
 							<div class="col">
 								<h3 class="page-title">Agent</h3>
 								<ul class="breadcrumb">
-									<li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
+									<li class="breadcrumb-item"><a href="dashboard.php">Tableau De Bord</a></li>
 									<li class="breadcrumb-item active">Agent</li>
 								</ul>
 							</div>
@@ -73,7 +73,7 @@ if(!isset($_SESSION['auser']))
 						<div class="col-sm-12">
 							<div class="card">
 								<div class="card-header">
-									<h4 class="card-title">Agent List</h4>
+									<h4 class="card-title">List Des Agents</h4>
 									<?php 
 										if(isset($_GET['msg']))	
 										echo $_GET['msg'];	
@@ -85,10 +85,10 @@ if(!isset($_SESSION['auser']))
                                             <thead>
                                                 <tr>
                                                     <th>#</th>
-                                                    <th>Name</th>
+                                                    <th>Nome</th>
                                                     <th>Email</th>
                                                     <th>Contact</th>
-                                                    <th>Utype</th>
+                                                    <th>Type Utilisateur</th>
 													<th>Image</th>
                                                     <th>Action</th>
                                                 </tr>

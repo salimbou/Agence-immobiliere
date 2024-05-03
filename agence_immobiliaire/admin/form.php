@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-<!-- Mirrored from dreamguys.co.in/demo/ventura/form-basic-inputs.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 25 Aug 2019 04:41:04 GMT -->
+
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title>Ventura - Basic Inputs</title>
+        <title>Entrées de base</title>
 		
 		<!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
@@ -22,10 +21,7 @@
 		<!-- Main CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
 		
-		<!--[if lt IE 9]>
-			<script src="assets/js/html5shiv.min.js"></script>
-			<script src="assets/js/respond.min.js"></script>
-		<![endif]-->
+		
     </head>
     <body>
 
@@ -42,10 +38,10 @@
 					<div class="page-header">
 						<div class="row">
 							<div class="col">
-								<h3 class="page-title">Basic Inputs</h3>
+								<h3 class="page-title">Entrées de base</h3>
 								<ul class="breadcrumb">
-									<li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-									<li class="breadcrumb-item active">Basic Inputs</li>
+									<li class="breadcrumb-item"><a href="index.html">Tableau De Bord</a></li>
+									<li class="breadcrumb-item active">Entrées de base</li>
 								</ul>
 							</div>
 						</div>
@@ -56,7 +52,7 @@
 						<div class="col-lg-12">
 							<div class="card">
 								<div class="card-header">
-									<h4 class="card-title">Basic Inputs</h4>
+									<h4 class="card-title">Entrées de base</h4>
 								</div>
 								<div class="card-body">
 									<form action="#">

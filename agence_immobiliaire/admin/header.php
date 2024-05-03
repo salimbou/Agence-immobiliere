@@ -51,11 +51,11 @@ if(!isset($_SESSION['auser']))
 								</div>
 								<div class="user-text">
 									<h6><?php echo $_SESSION['auser'];?></h6>
-									<p class="text-muted mb-0">Administrator</p>
+									<p class="text-muted mb-0">Administrateur</p>
 								</div>
 							</div>
 							<a class="dropdown-item" href="profile.php">Profile</a>
-							<a class="dropdown-item" href="logout.php">Logout</a>
+							<a class="dropdown-item" href="logout.php">Se Deconnecte</a>
 						</div>
 					</li>
 
@@ -79,55 +79,44 @@ if(!isset($_SESSION['auser']))
 								<span>Main</span>
 							</li>
 							<li> 
-								<a href="dashboard.php"><i class="fe fe-home"></i> <span>Dashboard</span></a>
+								<a href="dashboard.php"><i class="fe fe-home"></i> <span>Tableau De Bord</span></a>
 							</li>
 							
-							<!-- <li class="menu-title"> 
-								<span>Authentication</span>
-							</li>
-						
-							<li class="submenu">
-								<a href="#"><i class="fe fe-user"></i> <span> Authentication </span> <span class="menu-arrow"></span></a>
-								<ul style="display: none;">
-									<li><a href="index.php"> Login </a></li>
-									<li><a href="register.php"> Register </a></li>
-									
-								</ul>
-							</li> -->
+							
 							<li class="menu-title"> 
-								<span>All Users</span>
+								<span>tous les utilisateurs</span>
 							</li>
 						
 							<li class="submenu">
-								<a href="#"><i class="fe fe-user"></i> <span> All Users </span> <span class="menu-arrow"></span></a>
+								<a href="#"><i class="fe fe-user"></i> <span> tous les utilisateurs </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="adminlist.php"> Admin </a></li>
-									<li><a href="userlist.php"> Users </a></li>
+									<li><a href="adminlist.php"> Admine </a></li>
+									<li><a href="userlist.php"> Utilisateur </a></li>
 									<li><a href="useragent.php"> Agent </a></li>
-									<li><a href="userbuilder.php"> Builder </a></li>
+									<!-- <li><a href="userbuilder.php"> Builder </a></li> -->
 								</ul>
 							</li>
 
 							<li class="menu-title"> 
-								<span>State & City</span>
+								<span>Commune & Wilaya</span>
 							</li>
 						
 							<li class="submenu">
-								<a href="#"><i class="fe fe-location"></i> <span>State & City</span> <span class="menu-arrow"></span></a>
+								<a href="#"><i class="fe fe-location"></i> <span>Commune & Wilaya</span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="stateadd.php"> State </a></li>
-									<li><a href="cityadd.php"> City </a></li>
+									<li><a href="stateadd.php"> Wilaya </a></li>
+									<li><a href="cityadd.php"> Commune </a></li>
 								</ul>
 							</li>
 						
 							<li class="menu-title"> 
-								<span>Property Management</span>
+								<span>Gestion de l'immobilier</span>
 							</li>
 							<li class="submenu">
-								<a href="#"><i class="fe fe-map"></i> <span> Property</span> <span class="menu-arrow"></span></a>
+								<a href="#"><i class="fe fe-map"></i> <span> Immobilier</span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="propertyadd.php"> Add Property</a></li>
-									<li><a href="propertyview.php"> View Property </a></li>
+									<li><a href="propertyadd.php"> Add Immobilier</a></li>
+									<li><a href="propertyview.php"> View Immobilier </a></li>
 									
 								</ul>
 							</li>
@@ -145,13 +134,13 @@ if(!isset($_SESSION['auser']))
 								</ul>
 							</li>
 							<li class="menu-title"> 
-								<span>About</span>
+								<span>À propos</span>
 							</li>
 							<li class="submenu">
-								<a href="#"><i class="fe fe-browser"></i> <span> About Page </span> <span class="menu-arrow"></span></a>
+								<a href="#"><i class="fe fe-browser"></i> <span> À propos Page </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="aboutadd.php"> Add About Content </a></li>
-									<li><a href="aboutview.php"> View About </a></li>
+									<li><a href="aboutadd.php"> Add À propos Contenu </a></li>
+									<li><a href="aboutview.php"> View À propos </a></li>
 								</ul>
 							</li>
 							

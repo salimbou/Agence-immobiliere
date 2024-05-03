@@ -80,19 +80,19 @@ if(isset($_REQUEST['login']))
                 	<div class="loginbox">
                         <div class="login-right">
 							<div class="login-right-wrap">
-								<h1>Login</h1>
-								<p class="account-subtitle">Access to our dashboard</p>
+								<h1>Se connecter</h1>
+								<p class="account-subtitle">Accès à votre tableau de bord</p>
 								<?php echo $error; ?><?php echo $msg; ?>
 								<!-- Form -->
 								<form method="post">
 									<div class="form-group">
-										<input type="email"  name="email" class="form-control" placeholder="Your Email*">
+										<input type="email"  name="email" class="form-control" placeholder="Entrer Votre Email*">
 									</div>
 									<div class="form-group">
-										<input type="password" name="pass"  class="form-control" placeholder="Your Password">
+										<input type="password" name="pass"  class="form-control" placeholder="Entrer Votre Mot-Pass">
 									</div>
 									
-										<button class="btn btn-success" name="login" value="Login" type="submit">Login</button>
+										<button class="btn btn-success rounded" name="login" value="Login" type="submit">Se connecter</button>
 									
 								</form>
 								
@@ -101,7 +101,7 @@ if(isset($_REQUEST['login']))
 									<span class="span-or">or</span>
 								</div>
 								
-								<div class="text-center dont-have">Don't have an account? <a href="register.php">Register</a></div>
+								<div class="text-center dont-have">Vous n'avez pas de compte ? <a href="register.php">Registrer</a></div>
 								
 							</div>
                         </div>

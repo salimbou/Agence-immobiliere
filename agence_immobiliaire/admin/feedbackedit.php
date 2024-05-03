@@ -36,7 +36,7 @@ if(isset($_POST['update']))
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title>LM HOMES | About</title>
+        <title>Feedback</title>
 		
 		<!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
@@ -80,7 +80,7 @@ if(isset($_POST['update']))
 							<div class="col">
 								<h3 class="page-title">Feedback</h3>
 								<ul class="breadcrumb">
-									<li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
+									<li class="breadcrumb-item"><a href="dashboard.php">Tableau De Bord</a></li>
 									<li class="breadcrumb-item active">Feedback</li>
 								</ul>
 							</div>

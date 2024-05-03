@@ -14,7 +14,7 @@ if(!isset($_SESSION['auser']))
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title>LM Homes | Admin</title>
+        <title>Feedback</title>
 		
 		<!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
@@ -61,7 +61,7 @@ if(!isset($_SESSION['auser']))
 							<div class="col">
 								<h3 class="page-title">Feedback</h3>
 								<ul class="breadcrumb">
-									<li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
+									<li class="breadcrumb-item"><a href="dashboard.php">Tableau De Bord</a></li>
 									<li class="breadcrumb-item active">Feedback</li>
 								</ul>
 							</div>
@@ -73,8 +73,8 @@ if(!isset($_SESSION['auser']))
 						<div class="col-sm-12">
 							<div class="card">
 								<div class="card-header">
-									<h4 class="card-title">Feedback List</h4>
-									<small>Here, user can select feedbacks for displaying as testimonial. Note: Status "1" sets the feedback as testimonial.</small>
+									<h4 class="card-title">List Des Feedback </h4>
+									<small>Ici, l'utilisateur peut sélectionner les commentaires à afficher comme témoignage. Remarque : Le statut « 1 » définit le commentaire comme témoignage.</small>
 									<?php 
 											if(isset($_GET['msg']))	
 											echo $_GET['msg'];
@@ -87,7 +87,7 @@ if(!isset($_SESSION['auser']))
                                             <thead>
                                                 <tr>
                                                     <th>#</th>
-                                                    <th>Name</th>
+                                                    <th>Nome</th>
                                                     <th>Email</th>
                                                     <th>Feedback</th>
 													<th>Status</th>
