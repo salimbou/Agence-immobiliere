@@ -16,7 +16,7 @@ if(isset($_POST['add']))
 {
 	
 	$title=$_POST['title'];
-	$content=$_POST['content'];
+	//$content=$_POST['content'];
 	$ptype=$_POST['ptype'];
 	$bhk=$_POST['bhk'];
 	$bed=$_POST['bed'];
@@ -29,49 +29,49 @@ if(isset($_POST['add']))
 	$price=$_POST['price'];
 	$city=$_POST['city'];
 	$asize=$_POST['asize'];
-	$loc=$_POST['loc'];
+	// $loc=$_POST['loc'];
 	$state=$_POST['state'];
-	$status=$_POST['status'];
+	// $status=$_POST['status'];
 	$uid=$_SESSION['uid'];
-	$feature=$_POST['feature'];
+	// $feature=$_POST['feature'];
 	
-	$totalfloor=$_POST['totalfl'];
+	// $totalfloor=$_POST['totalfl'];
 
-	$isFeatured=$_POST['isFeatured'];
+	// $isFeatured=$_POST['isFeatured'];
 	
-	$aimage=$_FILES['aimage']['name'];
-	$aimage1=$_FILES['aimage1']['name'];
-	$aimage2=$_FILES['aimage2']['name'];
-	$aimage3=$_FILES['aimage3']['name'];
-	$aimage4=$_FILES['aimage4']['name'];
+	// $aimage=$_FILES['aimage']['name'];
+	// $aimage1=$_FILES['aimage1']['name'];
+	// $aimage2=$_FILES['aimage2']['name'];
+	// $aimage3=$_FILES['aimage3']['name'];
+	// $aimage4=$_FILES['aimage4']['name'];
 	
-	$fimage=$_FILES['fimage']['name'];
-	$fimage1=$_FILES['fimage1']['name'];
-	$fimage2=$_FILES['fimage2']['name'];
+	// $fimage=$_FILES['fimage']['name'];
+	// $fimage1=$_FILES['fimage1']['name'];
+	// $fimage2=$_FILES['fimage2']['name'];
 	
-	$temp_name  =$_FILES['aimage']['tmp_name'];
-	$temp_name1 =$_FILES['aimage1']['tmp_name'];
-	$temp_name2 =$_FILES['aimage2']['tmp_name'];
-	$temp_name3 =$_FILES['aimage3']['tmp_name'];
-	$temp_name4 =$_FILES['aimage4']['tmp_name'];
+	// $temp_name  =$_FILES['aimage']['tmp_name'];
+	// $temp_name1 =$_FILES['aimage1']['tmp_name'];
+	// $temp_name2 =$_FILES['aimage2']['tmp_name'];
+	// $temp_name3 =$_FILES['aimage3']['tmp_name'];
+	// $temp_name4 =$_FILES['aimage4']['tmp_name'];
 	
-	$temp_name5 =$_FILES['fimage']['tmp_name'];
-	$temp_name6 =$_FILES['fimage1']['tmp_name'];
-	$temp_name7 =$_FILES['fimage2']['tmp_name'];
+	// $temp_name5 =$_FILES['fimage']['tmp_name'];
+	// $temp_name6 =$_FILES['fimage1']['tmp_name'];
+	// $temp_name7 =$_FILES['fimage2']['tmp_name'];
 	
-	move_uploaded_file($temp_name,"admin/property/$aimage");
-	move_uploaded_file($temp_name1,"admin/property/$aimage1");
-	move_uploaded_file($temp_name2,"admin/property/$aimage2");
-	move_uploaded_file($temp_name3,"admin/property/$aimage3");
-	move_uploaded_file($temp_name4,"admin/property/$aimage4");
+	// move_uploaded_file($temp_name,"admin/property/$aimage");
+	// move_uploaded_file($temp_name1,"admin/property/$aimage1");
+	// move_uploaded_file($temp_name2,"admin/property/$aimage2");
+	// move_uploaded_file($temp_name3,"admin/property/$aimage3");
+	// move_uploaded_file($temp_name4,"admin/property/$aimage4");
 	
-	move_uploaded_file($temp_name5,"admin/property/$fimage");
-	move_uploaded_file($temp_name6,"admin/property/$fimage1");
-	move_uploaded_file($temp_name7,"admin/property/$fimage2");
+	// move_uploaded_file($temp_name5,"admin/property/$fimage");
+	// move_uploaded_file($temp_name6,"admin/property/$fimage1");
+	// move_uploaded_file($temp_name7,"admin/property/$fimage2");
 	
-	$sql="insert into property (title,pcontent,type,bhk,stype,bedroom,bathroom,balcony,kitchen,hall,floor,size,price,location,city,state,feature,pimage,pimage1,pimage2,pimage3,pimage4,uid,status,mapimage,topmapimage,groundmapimage,totalfloor, isFeatured)
-	values('$title','$content','$ptype','$bhk','$stype','$bed','$bath','$balc','$kitc','$hall','$floor','$asize','$price',
-	'$loc','$city','$state','$feature','$aimage','$aimage1','$aimage2','$aimage3','$aimage4','$uid','$status','$fimage','$fimage1','$fimage2','$totalfloor', '$isFeatured')";
+	$sql="insert into demandeimmobilier (title,stype,ptype,bhk,bedroom,bthroom,balcony,kitchen,hall,floor,asize,price,city,state,uid)
+	values('$title','$ptype','$bhk','$stype','$bed','$bath','$balc','$kitc','$hall','$floor','$asize','$price',
+	'$city','$state','$uid')";
 	$result=mysqli_query($con,$sql);
 	if($result)
 		{
@@ -117,7 +117,7 @@ if(isset($_POST['add']))
 
 <!--	Title
 	=========================================================-->
-<title>Ajouter Immobilier</title>
+<title>Demande Immobilier</title>
 </head>
 <body>
 
@@ -138,7 +138,7 @@ if(isset($_POST['add']))
             <div class="container">
                     <div class="row">
 						<div class="col-lg-12">
-							<h2 class="text-secondary double-down-line text-center">Submit Property</h2>
+							<h2 class="text-secondary double-down-line text-center">Demande Immobilier</h2>
                         </div>
 					</div>
                     <div class="row p-5 bg-white">
@@ -156,12 +156,12 @@ if(isset($_POST['add']))
 														<input type="text" class="form-control" name="title" required placeholder="Enter Titre">
 													</div>
 												</div>
-												<div class="form-group row">
+												<!-- <div class="form-group row">
 													<label class="col-lg-2 col-form-label">Contenu</label>
 													<div class="col-lg-9">
 														<textarea class="tinymce form-control" name="content" rows="10" cols="30"></textarea>
 													</div>
-												</div>
+												</div> -->
 												
 											</div>
 											<div class="col-xl-6">
@@ -260,7 +260,7 @@ if(isset($_POST['add']))
 												<div class="form-group row">
 													<label class="col-lg-3 col-form-label">Prix</label>
 													<div class="col-lg-9">
-														<input type="text" class="form-control" name="price" required placeholder="Enter Price">
+														<input type="text" class="form-control" name="price" required placeholder="Enter Prix">
 													</div>
 												</div>
 												<div class="form-group row">
@@ -277,7 +277,7 @@ if(isset($_POST['add']))
 												</div>
 											</div>
 											<div class="col-xl-6">
-												<div class="form-group row">
+												<!-- <div class="form-group row">
 													<label class="col-lg-3 col-form-label">Total Etages</label>
 													<div class="col-lg-9">
 														<select class="form-control" required name="totalfl">
@@ -299,39 +299,39 @@ if(isset($_POST['add']))
 															<option value="15 Floor">15 Etage</option>
 														</select>
 													</div>
-												</div>
+												</div> -->
 												<div class="form-group row">
 													<label class="col-lg-3 col-form-label">Surface</label>
 													<div class="col-lg-9">
 														<input type="text" class="form-control" name="asize" required placeholder="Enter Surface (in metre carree)">
 													</div>
 												</div>
-												<div class="form-group row">
+												<!-- <div class="form-group row">
 													<label class="col-lg-3 col-form-label">Address</label>
 													<div class="col-lg-9">
 														<input type="text" class="form-control" name="loc" required placeholder="Enter Address">
 													</div>
-												</div>
+												</div> -->
 												
 											</div>
 										</div>
 										
-										<div class="form-group row">
+										<!-- <div class="form-group row">
 											<label class="col-lg-2 col-form-label">Feature</label>
 											<div class="col-lg-9">
 											<p class="alert alert-danger">* Important Veuillez ne pas supprimer le contenu ci-dessous uniquement.<b>Oui</b> Ou <b>Non</b> ou Détails et ne pas ajouter plus de détails</p>
 											
-											<textarea class="tinymce form-control" name="feature" rows="10" cols="30">
-												<!---feature area start--->
-												<div class="col-md-4">
+											<textarea class="tinymce form-control" name="feature" rows="10" cols="30">-->
+												<!--feature area start--->
+												<!-- <div class="col-md-4">
 														<ul>
 														<li class="mb-3"><span class="text-secondary font-weight-bold">Age De L'immobilier : </span>10 Ans</li>
 														<li class="mb-3"><span class="text-secondary font-weight-bold">Piscine : </span>Oui</li>
 														<li class="mb-3"><span class="text-secondary font-weight-bold">Parking : </span>Oui</li>
 														<li class="mb-3"><span class="text-secondary font-weight-bold">Salle De Sport : </span>Oui</li>
 														</ul>
-													</div>
-													<div class="col-md-4">
+													</div> -->
+													<!-- <div class="col-md-4">
 														<ul>
 														<li class="mb-3"><span class="text-secondary font-weight-bold">Type : </span>Apartement</li>
 														<li class="mb-3"><span class="text-secondary font-weight-bold">Sécurité : </span>Oui</li>
@@ -339,22 +339,22 @@ if(isset($_POST['add']))
 														<li class="mb-3"><span class="text-secondary font-weight-bold">La mosquée: </span>Oui</li>
 														
 														</ul>
-													</div>
-													<div class="col-md-4">
+													</div> -->
+													<!-- <div class="col-md-4">
 														<ul>
 														<li class="mb-3"><span class="text-secondary font-weight-bold">3ème partie : </span>No</li>
 														<li class="mb-3"><span class="text-secondary font-weight-bold">Ascenseur : </span>Oui</li>
 														<li class="mb-3"><span class="text-secondary font-weight-bold">Vidéosurveillance : </span>Oui</li>
 														<li class="mb-3"><span class="text-secondary font-weight-bold">Approvisionnement en eau : </span>Eaux souterraines / Réservoir</li>
 														</ul>
-													</div>
+													</div> -->
 												<!---feature area end---->
-											</textarea>
+											<!-- </textarea>
 											</div>
-										</div>
+										</div>  -->
 												
-										<h5 class="text-secondary">Image & Status</h5><hr>
-										<div class="row">
+										<!-- <h5 class="text-secondary">Image & Status</h5><hr> -->
+										<!-- <div class="row">
 											<div class="col-xl-6">
 												
 												<div class="form-group row">
@@ -420,11 +420,11 @@ if(isset($_POST['add']))
 													</div>
 												</div>
 											</div>
-										</div>
+										</div> -->
 
 										<hr>
 
-										<div class="row">
+										<!-- <div class="row">
 											<div class="col-md-6">
 												<div class="form-group row">
 													<label class="col-lg-3 col-form-label"><b>Is Featured?</b></label>
@@ -437,7 +437,7 @@ if(isset($_POST['add']))
 													</div>
 												</div>
 											</div>
-										</div>
+										</div> -->
 
 										
 											<input type="submit" value="Submit Property" class="btn btn-info"name="add" style="margin-left:200px;">

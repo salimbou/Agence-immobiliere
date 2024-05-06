@@ -35,6 +35,7 @@ include("config.php");
 <link rel="stylesheet" type="text/css" href="fonts/flaticon/flaticon.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
+
 <!--	Titre 
     =========================================================-->
 <title>Agence Immobilière</title>

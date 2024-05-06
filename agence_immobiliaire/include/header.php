@@ -1,3 +1,8 @@
+
+<?php 
+include("config.php");
+?>
+<link rel="stylesheet" href="./css/notification.css" />
 <header id="header" class="transparent-header-modern fixed-header-bg-white w-100">
             <div class="top-header bg-secondary">
                 <div class="container">
@@ -59,9 +64,75 @@
 										<?php } ?>
 										
                                     </ul>
-                                    
-									
-									<a class="btn btn-success d-none d-xl-block" style="border-radius:30px;" href="submitproperty.php">Ajouter Immobilier</a> 
+                                    <?php  
+                                    if(isset($_SESSION['utype'])){
+                                    $userType = $_SESSION['utype'];
+                                    if($userType == "user"){
+                                      ?>
+									<a class="btn btn-success d-none d-xl-block" style="border-radius:30px;" href="demandeImmobilier.php">Demande Immobilier</a> 
+
+                                    <?php }elseif($userType == "agent") {?>
+                                     <a class="btn btn-success d-none d-xl-block" style="border-radius:30px;" href="submitproperty.php">Ajouter Immobilier</a> 
+                                     <button type="button" class="icon-button" id="notification-btn">
+                                        <span><img src="./images/notify.png" width="15" height="15" alt=""></span>
+                                        <span class="icon-button_badge" id="show_notif">
+                                            <?php 
+                                            
+                                            $sql = "select count(*) as count from `demandeimmobilier`";
+                                            $result=$con->query($sql);
+                                            $rows = array();
+                                            if($result->num_rows > 0){
+                                                while($userNotification = $result->fetch_assoc()){
+                                                    echo ($userNotification['count']);
+                                                }
+                                                 
+                                            } else {
+                                                echo "0 results";
+                                            }
+
+                                            ?>
+                                        </span>
+                                     </button>
+                                     <div class="notification show rounded bg-success text-white" id="not-list">
+                                        <table class="table table-hover">
+                                            <tr class="notif">
+                                                <td>id</td>
+                                                <td>title</td>
+                                                <td>price</td>
+                                            </tr>
+                                            
+                                            <?php 
+                                                 $sql = "select *  from `demandeimmobilier`";
+                                                 $result=$con->query($sql);
+                                                
+                                                 if($result->num_rows > 0){
+                                                     while($userNotification = $result->fetch_assoc()){?>
+                                                        <tr>
+                                                            <td>
+                                                            <?php echo '<a href="notificationDetails.php?id=' . $userNotification["id"] . '">'. $userNotification
+                                                            ["id"] . '</a>' ?>
+                                                            </td>
+                                                            <td>
+
+                                                            <?php echo '<a href="notificationDetails.php?id=' . $userNotification["id"] . '">'. $userNotification
+                                                            ["title"] . '</a>' ?>
+
+                                                            </td>
+                                                            <td>
+                                                            <?php echo '<a href="notificationDetails.php?id=' . $userNotification["id"] . '">'. $userNotification
+                                                            ["price"] . 'DZA</a>' ?>
+                                                            </td>
+                                                        </tr>
+                                                    <?php }
+                                                      
+                                                 } else {
+                                                     echo "0 results";
+                                                 }
+                                            ?>
+                                            
+                                        </table>
+                                     </div>
+                                    <?php } else {echo "No user";}}?>
                                 </div>
                             </nav>
                         </div>
@@ -69,3 +140,4 @@
                 </div>
             </div>
         </header>
+        <script src="./js/notification.js"></script>

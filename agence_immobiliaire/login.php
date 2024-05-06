@@ -17,6 +17,7 @@ if(isset($_REQUEST['login']))
 		   if($row){
 			   
 				$_SESSION['uid']=$row['uid'];
+				$_SESSION['utype'] = $row['utype'];
 				$_SESSION['uemail']=$email;
 				header("location:index.php");
 				
