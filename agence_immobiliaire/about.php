@@ -36,7 +36,7 @@ include("config.php");
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
 <!-- Title -->
-<title>Agence Immobiliere</title>
+<title>About</title>
 </head>
 <body>
 

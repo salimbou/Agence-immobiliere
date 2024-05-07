@@ -87,10 +87,10 @@ if(!isset($_SESSION['uemail']))
 					<table class="items-list col-lg-12 table-hover" style="border-collapse:inherit;">
                         <thead>
                              <tr  class="bg-dark">
-                                <th class="text-white font-weight-bolder">Properties</th>
+                                <th class="text-white font-weight-bolder">Immobilier</th>
                                 <th class="text-white font-weight-bolder">BHK</th>
                                 <th class="text-white font-weight-bolder">Type</th>
-                                <th class="text-white font-weight-bolder">Added Date</th>
+                                <th class="text-white font-weight-bolder">Date d'ajout</th>
 								<th class="text-white font-weight-bolder">Status</th>
                                 <th class="text-white font-weight-bolder">Update</th>
 								<th class="text-white font-weight-bolder">Delete</th>

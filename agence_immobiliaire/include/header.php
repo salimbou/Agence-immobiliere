@@ -46,8 +46,7 @@ include("config.php");
 										
                                         <li class="nav-item"> <a class="nav-link" href="property.php">Immobilier</a> </li>
                                         
-                                        <li class="nav-item"> <a class="nav-link" href="agent.php">Agent</a> </li>
-
+                                        
 										
 										<?php  if(isset($_SESSION['uemail']))
 										{ ?>
@@ -55,7 +54,19 @@ include("config.php");
 											<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mon compte</a>
 											<ul class="dropdown-menu">
 												<li class="nav-item"> <a class="nav-link" href="profile.php">Profile</a> </li>
-												<li class="nav-item"> <a class="nav-link" href="feature.php">Votre immobilier</a> </li>
+
+												
+
+                                                <?php  
+                                    if(isset($_SESSION['utype'])){
+                                    $userType = $_SESSION['utype'];
+                                    if($userType == "agent"){
+                                      ?>
+                                        <li class="nav-item"> <a class="nav-link" href="feature.php">Votre immobilier</a> </li>
+                                       
+                                        <?php }}?>
+
+
 												<li class="nav-item"> <a class="nav-link" href="logout.php">Se déconnecter</a> </li>	
 											</ul>
                                         </li>
@@ -93,7 +104,7 @@ include("config.php");
                                             ?>
                                         </span>
                                      </button>
-                                     <div class="notification show rounded bg-success text-white" id="not-list">
+                                     <div class="notification show rounded bg-success text-white overflow-auto" id="not-list">
                                         <table class="table table-hover">
                                             <tr class="notif">
                                                 <td>id</td>

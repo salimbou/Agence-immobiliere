@@ -8,8 +8,6 @@ if(!isset($_SESSION['uemail']))
 	header("location:login.php");
 }
 
-//// code insert
-//// add code
 $error="";
 $msg="";
 if(isset($_POST['add']))
@@ -138,7 +136,7 @@ if(isset($_POST['add']))
             <div class="container">
                     <div class="row">
 						<div class="col-lg-12">
-							<h2 class="text-secondary double-down-line text-center">Submit Property</h2>
+							<h2 class="text-secondary double-down-line text-center">Ajouter Immobilier</h2>
                         </div>
 					</div>
                     <div class="row p-5 bg-white">
@@ -153,7 +151,7 @@ if(isset($_POST['add']))
 												<div class="form-group row">
 													<label class="col-lg-2 col-form-label">Titre</label>
 													<div class="col-lg-9">
-														<input type="text" class="form-control" name="title" required placeholder="Enter Titre">
+														<input type="text" class="form-control" name="title" required placeholder="Enter Title">
 													</div>
 												</div>
 												<div class="form-group row">
@@ -166,10 +164,10 @@ if(isset($_POST['add']))
 											</div>
 											<div class="col-xl-6">
 												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Type De L'immobilier</label>
+													<label class="col-lg-3 col-form-label">Type Immobilier</label>
 													<div class="col-lg-9">
 														<select class="form-control" required name="ptype">
-															<option value="">Select Type</option>
+															<option value="">Selectioner un Type</option>
 															<option value="apartment">Apartement</option>
 															<option value="flat">Terrain</option>
 															<option value="building">Batiment</option>
@@ -180,7 +178,7 @@ if(isset($_POST['add']))
 													</div>
 												</div>
 												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Type De Vente </label>
+													<label class="col-lg-3 col-form-label">Type De Vente</label>
 													<div class="col-lg-9">
 														<select class="form-control" required name="stype">
 															<option value="">Select Status</option>
@@ -192,13 +190,13 @@ if(isset($_POST['add']))
 												<div class="form-group row">
 													<label class="col-lg-3 col-form-label">Salle De Bain</label>
 													<div class="col-lg-9">
-														<input type="text" class="form-control" name="bath" required placeholder="Enter Salle De Bain (only no 1 to 10)">
+														<input type="text" class="form-control" name="bath" required placeholder="Enter Bathroom (only no 1 to 10)">
 													</div>
 												</div>
 												<div class="form-group row">
 													<label class="col-lg-3 col-form-label">Cuisine</label>
 													<div class="col-lg-9">
-														<input type="text" class="form-control" name="kitc" required placeholder="Enter Cuisine (only no 1 to 10)">
+														<input type="text" class="form-control" name="kitc" required placeholder="Enter Kitchen (only no 1 to 10)">
 													</div>
 												</div>
 												
@@ -223,19 +221,19 @@ if(isset($_POST['add']))
 												<div class="form-group row">
 													<label class="col-lg-3 col-form-label">Chambres</label>
 													<div class="col-lg-9">
-														<input type="text" class="form-control" name="bed" required placeholder="Enter Chambres  (only no 1 to 10)">
+														<input type="text" class="form-control" name="bed" required placeholder="Enter Bedroom  (only no 1 to 10)">
 													</div>
 												</div>
 												<div class="form-group row">
 													<label class="col-lg-3 col-form-label">Balcon</label>
 													<div class="col-lg-9">
-														<input type="text" class="form-control" name="balc" required placeholder="Enter Balcon  (only no 1 to 10)">
+														<input type="text" class="form-control" name="balc" required placeholder="Enter Balcony  (only no 1 to 10)">
 													</div>
 												</div>
 												<div class="form-group row">
 													<label class="col-lg-3 col-form-label">Holl</label>
 													<div class="col-lg-9">
-														<input type="text" class="form-control" name="hall" required placeholder="Enter Holl  (only no 1 to 10)">
+														<input type="text" class="form-control" name="hall" required placeholder="Enter Hall  (only no 1 to 10)">
 													</div>
 												</div>
 												
@@ -248,12 +246,12 @@ if(isset($_POST['add']))
 													<label class="col-lg-3 col-form-label">Etage</label>
 													<div class="col-lg-9">
 														<select class="form-control" required name="floor">
-															<option value="">Select Etage</option>
-															<option value="1st Floor">1st Etage</option>
-															<option value="2nd Floor">2nd Etage</option>
-															<option value="3rd Floor">3rd Etage</option>
-															<option value="4th Floor">4th Etage</option>
-															<option value="5th Floor">5th Etage</option>
+															<option value="">Selectionner Etage</option>
+															<option value="1st Floor">1 Etage</option>
+															<option value="2nd Floor">2 Etage</option>
+															<option value="3rd Floor">3 Etage</option>
+															<option value="4th Floor">4 Etage</option>
+															<option value="5th Floor">5 Etage</option>
 														</select>
 													</div>
 												</div>
@@ -266,22 +264,22 @@ if(isset($_POST['add']))
 												<div class="form-group row">
 													<label class="col-lg-3 col-form-label">Commune</label>
 													<div class="col-lg-9">
-														<input type="text" class="form-control" name="city" required placeholder="Enter Commune">
+														<input type="text" class="form-control" name="city" required placeholder="Enter City">
 													</div>
 												</div>
 												<div class="form-group row">
 													<label class="col-lg-3 col-form-label">Wilaya</label>
 													<div class="col-lg-9">
-														<input type="text" class="form-control" name="state" required placeholder="Enter Wilaya">
+														<input type="text" class="form-control" name="state" required placeholder="Enter State">
 													</div>
 												</div>
 											</div>
 											<div class="col-xl-6">
 												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Total Etages</label>
+													<label class="col-lg-3 col-form-label">Etages Totale</label>
 													<div class="col-lg-9">
 														<select class="form-control" required name="totalfl">
-															<option value="">Select Etage</option>
+															<option value="">Selectionner Etage</option>
 															<option value="1 Floor">1 Etage</option>
 															<option value="2 Floor">2 Etage</option>
 															<option value="3 Floor">3 Etage</option>
@@ -303,7 +301,7 @@ if(isset($_POST['add']))
 												<div class="form-group row">
 													<label class="col-lg-3 col-form-label">Surface</label>
 													<div class="col-lg-9">
-														<input type="text" class="form-control" name="asize" required placeholder="Enter Surface (in metre carree)">
+														<input type="text" class="form-control" name="asize" required placeholder="Enter Area Size (in sqrt)">
 													</div>
 												</div>
 												<div class="form-group row">
@@ -319,13 +317,13 @@ if(isset($_POST['add']))
 										<div class="form-group row">
 											<label class="col-lg-2 col-form-label">Feature</label>
 											<div class="col-lg-9">
-											<p class="alert alert-danger">* Important Veuillez ne pas supprimer le contenu ci-dessous uniquement.<b>Oui</b> Ou <b>Non</b> ou Détails et ne pas ajouter plus de détails</p>
+											<p class="alert alert-danger">* Important Veuillez ne pas supprimer le contenu ci-dessous uniquement. <b>Oui</b> Ou <b>Non</b> ou Détails et ne pas ajouter plus de détails</p>
 											
 											<textarea class="tinymce form-control" name="feature" rows="10" cols="30">
 												<!---feature area start--->
 												<div class="col-md-4">
 														<ul>
-														<li class="mb-3"><span class="text-secondary font-weight-bold">Age De L'immobilier : </span>10 Ans</li>
+														<li class="mb-3"><span class="text-secondary font-weight-bold">Âge de l'immobilier : </span>10 Ans</li>
 														<li class="mb-3"><span class="text-secondary font-weight-bold">Piscine : </span>Oui</li>
 														<li class="mb-3"><span class="text-secondary font-weight-bold">Parking : </span>Oui</li>
 														<li class="mb-3"><span class="text-secondary font-weight-bold">Salle De Sport : </span>Oui</li>
@@ -334,18 +332,18 @@ if(isset($_POST['add']))
 													<div class="col-md-4">
 														<ul>
 														<li class="mb-3"><span class="text-secondary font-weight-bold">Type : </span>Apartement</li>
-														<li class="mb-3"><span class="text-secondary font-weight-bold">Sécurité : </span>Oui</li>
+														<li class="mb-3"><span class="text-secondary font-weight-bold">Securitee: </span>Oui</li>
 														<li class="mb-3"><span class="text-secondary font-weight-bold">Capacité de restauration : </span>10 Personne</li>
-														<li class="mb-3"><span class="text-secondary font-weight-bold">La mosquée: </span>Oui</li>
+														<li class="mb-3"><span class="text-secondary font-weight-bold">La mosquée : </span>Oui</li>
 														
 														</ul>
 													</div>
 													<div class="col-md-4">
 														<ul>
-														<li class="mb-3"><span class="text-secondary font-weight-bold">3ème partie : </span>No</li>
+														<li class="mb-3"><span class="text-secondary font-weight-bold">3ème partie: </span>Non</li>
 														<li class="mb-3"><span class="text-secondary font-weight-bold">Ascenseur : </span>Oui</li>
 														<li class="mb-3"><span class="text-secondary font-weight-bold">Vidéosurveillance : </span>Oui</li>
-														<li class="mb-3"><span class="text-secondary font-weight-bold">Approvisionnement en eau : </span>Eaux souterraines / Réservoir</li>
+														<li class="mb-3"><span class="text-secondary font-weight-bold">Approvisionnement en eau : </span>Eau souterraine / Réservoir</li>
 														</ul>
 													</div>
 												<!---feature area end---->
@@ -379,7 +377,7 @@ if(isset($_POST['add']))
 													<label class="col-lg-3 col-form-label">Status</label>
 													<div class="col-lg-9">
 														<select class="form-control"  required name="status">
-															<option value="">Select Status</option>
+															<option value="">Sélectionnez le statut</option>
 															<option value="available">Disponible</option>
 															<option value="sold out">Épuisé</option>
 														</select>
@@ -427,7 +425,7 @@ if(isset($_POST['add']))
 										<div class="row">
 											<div class="col-md-6">
 												<div class="form-group row">
-													<label class="col-lg-3 col-form-label"><b>Is Featured?</b></label>
+													<label class="col-lg-3 col-form-label"><b>est en vedette ?</b></label>
 													<div class="col-lg-9">
 														<select class="form-control" required name="isFeatured">
 															<option value="">Select...</option>
